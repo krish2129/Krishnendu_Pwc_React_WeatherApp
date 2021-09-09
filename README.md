@@ -35,7 +35,7 @@ The build is minified and the filenames include the hashes.<br />
 Your app is ready to be deployed!
 
 ### Application Mobile Responsive
-(https://github.com/krish2129/Krishnendu_Pwc_React_WeatherApp/blob/main/localhost_3000_(Galaxy%20S5).png)
+![PwC Weather APP](https://github.com/krish2129/Krishnendu_Pwc_React_WeatherApp/blob/main/localhost_3000_(Galaxy%20S5).png)
 
 
 
