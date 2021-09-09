@@ -6,7 +6,7 @@ import '../css/index.css';
 
 const API_KEY = process.env.REACT_APP_KEY
 
-//create the main class for displaying the recipes
+//create the main class for displaying the WeatherForecast
 const Home = () => {
   const [cityIndex, setCityIndex] = useState('');
   const [forecast, setForecast] = useState([]);
