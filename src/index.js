@@ -1,37 +1,16 @@
 //import the necessary files
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, HashRouter,Route, Switch } from "react-router-dom";
-import Header from './components/header';
-import Home  from './components/home';
+import App from './App';
+import * as serviceWorker from './serviceWorker';
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
 
-import './css/index.css';
-
-//create the main class for displaying the recipes
-class PwcWeatherApp extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      activePath: '/',      
-    }  
-  
-  }
- 
-  
-  
-  render() {
-    return(
-    <div>
-        <Header />
-        <HashRouter basename="/#">
-            <Switch>
-                <Route exact path="/"  component={Home} />  
-            </Switch>
-        </HashRouter>       
-      </div> 
-
-    );
-  }
-};
-
-ReactDOM.render(<PwcWeatherApp />, document.getElementById('app'));
+// If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: https://bit.ly/CRA-PWA
+serviceWorker.unregister();
