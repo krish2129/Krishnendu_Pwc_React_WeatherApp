@@ -17,9 +17,7 @@ class Header extends React.Component {
             <label><h2>Weather Widget</h2></label>
           <Navbar.Toggle />
         </Navbar.Header>
-        <Navbar.Collapse>
-        </Navbar.Collapse>
-      </Navbar>
+        </Navbar>
     );
   }
 }
